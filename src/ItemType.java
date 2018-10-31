@@ -3,11 +3,11 @@ public enum ItemType {
   VISUAL("VI"),
   AUDIO_MOBILE("AM"),
   VISUAL_MOBILE("VM");
-  public String code;
+  public String itcode; //maybe public
 
-  ItemType(String code) {
+  ItemType(String itcode) {
 
-    this.code = code;
+    this.itcode = itcode;
   }
 
 }

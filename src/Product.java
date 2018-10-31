@@ -7,7 +7,7 @@
 
 import java.util.Date; //needed to get current time etc
 
-public abstract class Product implements Item {
+public abstract class Product implements Item, Comparable<Item>{
 
   private int serialNumber;
   private String manufacturer = "OraclProduction";
@@ -58,7 +58,7 @@ public abstract class Product implements Item {
     setName(pName);
     setProductionNumber(currentProductionNumber);
     manufacturedOn.getTime();
-    toString();
+    this.toString();
 
   }
 }
