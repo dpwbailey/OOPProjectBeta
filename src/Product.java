@@ -17,7 +17,7 @@ public abstract class Product implements Item, Comparable<Item>{
   private ItemType code;
 
   public void setProductionNumber(int num) {
-    currentProductionNumber = num;
+    currentProductionNumber = num; //had to write to static field or it just didnt print
     serialNumber = currentProductionNumber;
     currentProductionNumber++;
   }

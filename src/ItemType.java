@@ -3,7 +3,7 @@ public enum ItemType {
   VISUAL("VI"),
   AUDIO_MOBILE("AM"),
   VISUAL_MOBILE("VM");
-  public String itcode; //maybe public
+  public String itcode;
 
   ItemType(String itcode) {
 

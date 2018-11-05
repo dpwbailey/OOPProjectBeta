@@ -2,7 +2,7 @@
 
 public class MoviePlayer extends Product implements MultimediaControl {
 //fields
-  public static Screen movieScreen = new Screen("1920 x 1080", 144, 1);
+  protected static Screen movieScreen = new Screen("1920 x 1080", 144, 1);
   public MonitorType monitorType = MonitorType.LCD;
 
   @Override
@@ -34,7 +34,7 @@ public class MoviePlayer extends Product implements MultimediaControl {
 
   public MoviePlayer(String pName, Screen movieScreen, MonitorType monitorType) {
     super(pName);
-    this.movieScreen = movieScreen;
+    this.movieScreen = movieScreen; //had to write to static field or it just didnt print
     this.monitorType = monitorType;
   }
   public MoviePlayer(){

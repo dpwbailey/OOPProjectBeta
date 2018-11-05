@@ -1,7 +1,7 @@
 public class AudioPlayer extends Product implements MultimediaControl {
 
   //fields
-  private String audioSpecifications;
+  private String audioSpecifications = "Default Audio Specifications";
   private ItemType mediaType;
 
   @Override
